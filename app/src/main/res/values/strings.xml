@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Music Player</string>
+    <string name="no_songs_found">No songs found</string>
+    <string name="music_icon">Music Icon</string>
+    <string name="music_title">Music Title</string>
+    <string name="more_options">More options</string>
+    <string name="start_time">0:00</string>
+    <string name="end_time">0:00</string>
+    <string name="previous">Previous</string>
+    <string name="play">Play</string>
+    <string name="next">Next</string>
+    <string name="share_menu">Share</string>
+    <string name="delete_menu">Delete</string>
+</resources>

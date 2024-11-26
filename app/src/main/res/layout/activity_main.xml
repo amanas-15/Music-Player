@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/main"
+    android:background="#CCB3BB"
+    tools:context=".MainActivity">
+
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardUseCompatPadding="true"
+    app:cardElevation="@dimen/_8sdp"
+    app:cardCornerRadius="@dimen/_5sdp">
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/musicSearchView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:queryHint="Search music" />
+</androidx.cardview.widget.CardView>
+    <TextView
+        android:id="@+id/tvNoSongs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/no_songs_found"
+        android:gravity="center"
+        android:visibility="gone"
+        android:padding="16dp"
+        android:textSize="18sp"
+        android:textColor="@android:color/black" />
+
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/_8sdp" />
+
+</LinearLayout>
